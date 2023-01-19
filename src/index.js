@@ -8,7 +8,7 @@ import Counters from './components/counters';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Counters />
+  <App />
 );
 
 //ReactDom.render(<Counter />, document.getElementById('root'));
