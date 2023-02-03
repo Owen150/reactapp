@@ -13,6 +13,7 @@ class App extends Component {
     ]
   };
 
+  //Called only once when an instance of a class is created
   constructor() {
     super();
     console.log("App-Constructor");
@@ -48,7 +49,7 @@ class App extends Component {
   render() {
     
     console.log("App-rendered");
-    
+
     return (
       <React.Fragment>
         <Navbar
