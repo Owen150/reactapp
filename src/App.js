@@ -13,6 +13,17 @@ class App extends Component {
     ]
   };
 
+  constructor() {
+    super();
+    console.log("App-Constructor");
+  }
+
+  //Perfect place to make AJAX calls to get data from the server
+  //Called after our component is rendered into the DOM
+  componentDidMount() {
+    console.log("App-Mounted");
+  }
+
   handleIncrement = counter => {
       const counters = [...this.state.counters];
       const index = counters.indexOf(counter);
@@ -34,7 +45,10 @@ class App extends Component {
       this.setState({ counters });
   };
 
-  render(){
+  render() {
+    
+    console.log("App-rendered");
+    
     return (
       <React.Fragment>
         <Navbar
